@@ -7,8 +7,7 @@ const Roadmap2 = () => {
   return (
     <section
       id="roadmap"
-      className="w-full h-screen flex flex-col items-center justify-start bg-black text-white"
-      style={{ backgroundImage: `url(${rd2})`, backgroundSize: 'cover', backgroundPosition: 'center' }} // Set the background image
+      className="w-full h-screen flex flex-col items-center justify-start text-black"
     >
       {/* Top Centered Image */}
       <div className="w-full flex justify-center pt-8 mb-12">
@@ -20,20 +19,20 @@ const Roadmap2 = () => {
       </div>
 
       {/* Content Container */}
-      <div className="flex w-full max-w-screen-lg">
+      <div className="flex w-full max-w-screen-lg items-center">
         {/* Left Side: Background Image */}
         <div className="w-1/2 flex justify-center items-center">
           <img
             src={rd2}
             alt="Background Image"
-            className="w-full h-auto object-cover"
+            className="w-[80%] h-auto object-cover"
           />
         </div>
 
         {/* Right Side: Text */}
         <div className="w-1/2 flex justify-center items-center p-8">
-          <div className="text-lg text-white">
-            <ul className="list-disc list-inside font-kalam space-y-4">
+          <div className="text-[22px] text-black">
+            <ul className="list-none list-inside font-kalam space-y-4">
               <li>1. CALLER AT KOFH</li>
               <li>2. PREPAYING DEX AT AROUND 30K MCAP</li>
               <li>3. LIVE BURNS AT EVERY COMPLETED STEP</li>
