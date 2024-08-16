@@ -16,7 +16,6 @@ import loadingImage from "./spinner.png";
 import banner1 from './main2.png'
 import videoBg from './vidbg.mp4'
 import videoBg2 from './vidbg2.mp4'
-import logoImage from './logo.png'
 import leftImage from './bg9.png'
 import bottomRightImage from './pepe.png'
 import chartImage from './chartImage.png'
@@ -30,8 +29,15 @@ import rd1 from './rd1.png'
 import rd2 from './rd2.png'
 import joinImage from './join.png'
 import spinningImage from './spin.png'
-import topLogo from './topLogo.png'
 import rd5 from './rd5.png'
+import linkImage1 from './link1.png'
+import linkImage2 from './link2.png'
+import linkImage3 from './link3.png'
+import hr1 from './hr1.png'
+import about5 from './about5.png'
+import joinBg from './joinBg.png'
+import rdT2 from './rdT2.png'
+
 
 
 
@@ -61,7 +67,6 @@ export {
     banner1,
     videoBg,
     videoBg2,
-    logoImage,
     leftImage,
     bottomRightImage,
     bg6,
@@ -76,9 +81,14 @@ export {
     rd2,
     joinImage,
     spinningImage,
-    topLogo,
-    rd5
-
+    rd5,
+    linkImage1,
+    linkImage2,
+    linkImage3,
+    hr1,
+    about5,
+    joinBg,
+    rdT2
 
 
 }

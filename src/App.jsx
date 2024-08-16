@@ -1,5 +1,5 @@
 
-import { Hero, About, Roadmap2,Roadmap5, About2,About3,About4,Links, NewSection, Join , ComingSoon} from "./sections";
+import { Hero2, About, Roadmap2,Roadmap5, About5,About3,About4,Links, Join2} from "./sections";
 import VideoBackground from "./components/VideoBackground";
 import VideoBackground2 from "./components/VideoBackground2";
 
@@ -19,6 +19,9 @@ import main3 from './assets/images/main3.png';
 import bgImage from './assets/images/main.png';
 import mainbg from './assets/images/mainbg.png';
 import linkBg from './assets/images/linkBg.png'
+import bottomBg from './assets/images/bottomBg.png'
+import bgR from './assets/images/bgR.png'
+
 
 
 
@@ -27,43 +30,40 @@ import linkBg from './assets/images/linkBg.png'
 
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000); // Set the loading time to 3 seconds
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 1000); // Set the loading time to 3 seconds
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
-  if (isLoading) {
-    return <LoadingScreen />;
-  }
+  // if (isLoading) {
+  //   return <LoadingScreen />;
+  // }
 return(
   <main className="relative bg-[#4848c0]" >
-    <Nav />
+    {/* <Nav /> */}
     {/* <section className="w-full h-screen bg-cover bg-center " style={{ backgroundImage: `url(${main3})` }}><ComingSoon /></section> */}
    
    
-    <section className="w-full h-screen bg-cover bg-center   " style={{ backgroundImage: `url(${bgImage})` }}>
-      <Hero />
+    <section className="w-full h-full bg-cover bg-center   " style={{ backgroundImage: `url(${bgImage})` }}>
+      <Hero2 />
     </section>
     <Separator />
-    <About />
+    <About5 />
+    <section className="w-full h-screen bg-cover bg-center   " style={{ backgroundImage: `url(${bgR})` }}>
+      <Roadmap2 />
+    </section>
+    
+    
     <Separator />
     
-    <Roadmap5 />
-
-    <Separator />
-
-
-        
-      
-     
-
-
-    <StickyFooter />
+    <section className="w-full h-screen bg-cover bg-center   " style={{ backgroundImage: `url(${bottomBg})` }}>
+      <Join2 />
+    </section>
   </main>
 );
 };

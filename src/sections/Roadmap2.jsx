@@ -1,109 +1,51 @@
 
 
-// import React, { useEffect, useRef } from 'react';
-// import { rd1, rd2 } from '../assets/images'; // Import the images
-
-// const Roadmap2 = () => {
-//   const img1Ref = useRef(null);
-//   const img2Ref = useRef(null);
-
-//   useEffect(() => {
-//     const options = {
-//       threshold: 0.1, // Trigger when 10% of the image is visible
-//     };
-
-//     const observer = new IntersectionObserver((entries, observer) => {
-//       entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//           entry.target.classList.add('animate');
-//           observer.unobserve(entry.target); // Stop observing once animated
-//         }
-//       });
-//     }, options);
-
-//     if (img1Ref.current) observer.observe(img1Ref.current);
-//     if (img2Ref.current) observer.observe(img2Ref.current);
-
-//     return () => {
-//       if (img1Ref.current) observer.unobserve(img1Ref.current);
-//       if (img2Ref.current) observer.unobserve(img2Ref.current);
-//     };
-//   }, []);
-
-//   return (
-//     <div id="roadmap" className="w-full h-screen flex flex-col justify-end items-center pb-10 relative">
-//       <div className="flex w-full justify-center items-end relative">
-//         <img
-//           src={rd1}
-//           alt="Roadmap Image 1"
-//           ref={img1Ref}
-//           className="w-[85%] h-auto translate-x-full opacity-0 absolute bottom-0 left-0 transition-transform duration-1000"
-//         />
-//         <img
-//           src={rd2}
-//           alt="Roadmap Image 2"
-//           ref={img2Ref}
-//           className="w-[85%] h-auto -translate-x-full opacity-0 absolute bottom-0 right-0 transition-transform duration-1000"
-//         />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Roadmap2;
-
-
-import React, { useEffect, useRef } from 'react';
-import { rd1, rd2 } from '../assets/images'; // Import the images
+import React from 'react';
+import { rdT2, rd2 } from '../assets/images'; // Import the images
 
 const Roadmap2 = () => {
-  const img1Ref = useRef(null);
-  const img2Ref = useRef(null);
-
-  useEffect(() => {
-    const options = {
-      threshold: 0.1, // Trigger when 10% of the image is visible
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          if (entry.target === img1Ref.current) {
-            entry.target.classList.add('animate-slide-in-left');
-          } else if (entry.target === img2Ref.current) {
-            entry.target.classList.add('animate-slide-in-right');
-          }
-          observer.unobserve(entry.target); // Stop observing once animated
-        }
-      });
-    }, options);
-
-    if (img1Ref.current) observer.observe(img1Ref.current);
-    if (img2Ref.current) observer.observe(img2Ref.current);
-
-    return () => {
-      if (img1Ref.current) observer.unobserve(img1Ref.current);
-      if (img2Ref.current) observer.unobserve(img2Ref.current);
-    };
-  }, []);
-
   return (
-    <div id="roadmap" className="w-full h-screen flex flex-col justify-end items-center pb-10 relative">
-      <div className="flex w-full justify-center items-end relative">
+    <section
+      id="roadmap"
+      className="w-full h-screen flex flex-col items-center justify-start bg-black text-white"
+      style={{ backgroundImage: `url(${rd2})`, backgroundSize: 'cover', backgroundPosition: 'center' }} // Set the background image
+    >
+      {/* Top Centered Image */}
+      <div className="w-full flex justify-center pt-8 mb-12">
         <img
-          src={rd1}
-          alt="Roadmap Image 1"
-          ref={img1Ref}
-          className="w-[85%] h-auto opacity-0 absolute bottom-0 left-0 transition-transform duration-1000"
-        />
-        <img
-          src={rd2}
-          alt="Roadmap Image 2"
-          ref={img2Ref}
-          className="w-[85%] h-auto opacity-0 absolute bottom-0 right-0 transition-transform duration-1000"
+          src={rdT2}
+          alt="Top Centered"
+          className="w-[750px] h-auto"
         />
       </div>
-    </div>
+
+      {/* Content Container */}
+      <div className="flex w-full max-w-screen-lg">
+        {/* Left Side: Background Image */}
+        <div className="w-1/2 flex justify-center items-center">
+          <img
+            src={rd2}
+            alt="Background Image"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+
+        {/* Right Side: Text */}
+        <div className="w-1/2 flex justify-center items-center p-8">
+          <div className="text-lg text-white">
+            <ul className="list-disc list-inside font-kalam space-y-4">
+              <li>1. CALLER AT KOFH</li>
+              <li>2. PREPAYING DEX AT AROUND 30K MCAP</li>
+              <li>3. LIVE BURNS AT EVERY COMPLETED STEP</li>
+              <li>4. DEX ADS AS SOON AS WE ARE LIVE ON RAYDIUM</li>
+              <li>5. MOONTOK LISTING 100k</li>
+              <li>6. MORE BURNS</li>
+              <li>7. BIG CALLERS 200-300k</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
