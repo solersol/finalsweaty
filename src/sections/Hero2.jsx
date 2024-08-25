@@ -12,17 +12,17 @@ const Hero2 = () => {
       {/* Content Centered Vertically */}
       <div className="flex flex-col items-center justify-center h-full">
         {/* Title */}
-        <h1 className="text-4xl font-bold mb-8 text-center">CA: 6NnhSQXTrKEknLNd7WhDzDfjaCP6BmfowJMiUcSppump</h1>
+        <h1 className="text-3xl font-bold mb-8 text-center font-anton">CA: </h1>
 
         {/* Linked Images in a Row */}
         <div className="flex space-x-4">
-          <a href="https://pump.fun/6NnhSQXTrKEknLNd7WhDzDfjaCP6BmfowJMiUcSppump" className="transition-transform transform hover:scale-150">
+          <a href="https://pump.fun/" className="transition-transform transform hover:scale-150">
             <img src={linkImage1} alt="Link to Page 1" className="w-24 h-auto rounded-lg" />
           </a>
-          <a href="https://t.me/SweatySolana" className="transition-transform transform hover:scale-150">
+          <a href="https://t.me/" className="transition-transform transform hover:scale-150">
             <img src={linkImage2} alt="Link to Page 2" className="w-24 h-auto rounded-lg" />
           </a>
-          <a href="https://x.com/SweatySol" className="transition-transform transform hover:scale-150">
+          <a href="https://x.com/" className="transition-transform transform hover:scale-150">
             <img src={linkImage3} alt="Link to Page 3" className="w-24 h-auto rounded-lg" />
           </a>
         </div>
