@@ -22,7 +22,7 @@ const About5 = () => {
             ABOUT
           </h1>
           <p className="text-[26px] font-kalam text-black leading-relaxed">
-            BOOM, BOOM, BOOM….What’s that? It’s $SWEATY walking to get his favourite snack & he’s right around the corner!!! He’s so fat even mosquitos don’t want a piece of him. His appetite is becoming bigger with each second & his new favourite snacks are pump.fun, ray & dex. Watch out, $SWEATY is coming in hot! Help $SWEATY afford a gym membership by lighting up the green candles!<br /> Original Matt Furie inspired character
+            BOOM, BOOM, BOOM….What’s that? It’s $PHATY walking to get his favourite snack & he’s right around the corner!!! He’s so fat even mosquitos don’t want a piece of him. His appetite is becoming bigger with each second & his new favourite snacks are pump.fun, ray & dex. Watch out, $PHATY is coming in hot! Help $PHATY afford a gym membership by lighting up the green candles!<br /> Original Matt Furie inspired character
           </p>
         </div>
       </div>
