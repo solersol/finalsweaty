@@ -55,10 +55,10 @@ const Hero2 = () => {
           <a href="https://pump.fun/" className="transition-transform transform hover:scale-150">
             <img src={linkImage1} alt="Link to Page 1" className="w-24 h-auto rounded-lg" />
           </a>
-          <a href="https://t.me/" className="transition-transform transform hover:scale-150">
+          <a href="https://t.me/PHATYsol" className="transition-transform transform hover:scale-150">
             <img src={linkImage2} alt="Link to Page 2" className="w-24 h-auto rounded-lg" />
           </a>
-          <a href="https://x.com/" className="transition-transform transform hover:scale-150">
+          <a href="https://x.com/PhatySol" className="transition-transform transform hover:scale-150">
             <img src={linkImage3} alt="Link to Page 3" className="w-24 h-auto rounded-lg" />
           </a>
         </div>

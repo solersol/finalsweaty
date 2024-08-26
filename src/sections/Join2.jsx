@@ -10,7 +10,7 @@ const Join2 = () => {
       style={{ backgroundImage: `url(${joinBg})` }}
     >
       {/* Image Link in the Center */}
-      <a href="https://t.me/SweatySolana" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center">
+      <a href="https://t.me/PHATYsol" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center">
         <img
           src={joinImage}
           alt="Join Us"
