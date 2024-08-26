@@ -37,6 +37,7 @@ import hr1 from './hr1.png'
 import about5 from './about5.png'
 import joinBg from './joinBg.png'
 import rdT2 from './rdT2.png'
+import gifImage from './a.gif'
 
 
 
@@ -88,7 +89,8 @@ export {
     hr1,
     about5,
     joinBg,
-    rdT2
+    rdT2,
+    gifImage
 
 
 }
